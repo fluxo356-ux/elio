@@ -1,0 +1,214 @@
+/* ========================================================= */
+/* ELIO TRANSPARENT BRAND LOGO */
+/* ========================================================= */
+
+.elio-brand-logo {
+  display: block;
+
+  max-width: 100%;
+
+  object-fit: contain !important;
+
+  object-position: center !important;
+
+  background: transparent !important;
+
+  border: 0 !important;
+
+  box-shadow: none !important;
+
+  mix-blend-mode: normal;
+
+  transition:
+    opacity 0.2s ease;
+}
+
+
+/* ========================================================= */
+/* LIGHT BACKGROUNDS */
+/* Black logo */
+/* ========================================================= */
+
+header .elio-brand-logo,
+.admin-header .elio-brand-logo,
+.admin-login .elio-brand-logo {
+  filter: none !important;
+}
+
+
+/* ========================================================= */
+/* DARK BACKGROUNDS */
+/* White logo */
+/* ========================================================= */
+
+.elio-brand-logo-light {
+  filter:
+    brightness(0)
+    invert(1) !important;
+
+  opacity: 0.97;
+}
+
+
+/* ========================================================= */
+/* HOMEPAGE HEADER */
+/* ========================================================= */
+
+.logo .elio-brand-logo {
+  width: 165px;
+
+  height: 76px;
+
+  object-fit: contain !important;
+}
+
+
+/* ========================================================= */
+/* HOMEPAGE FOOTER */
+/* ========================================================= */
+
+.footer-brand .elio-brand-logo {
+  width: 190px;
+
+  height: auto;
+
+  object-fit: contain !important;
+}
+
+
+/* ========================================================= */
+/* PRODUCT PAGE HEADER */
+/* ========================================================= */
+
+.product-header-logo .elio-brand-logo {
+  width: 165px;
+
+  height: 76px;
+
+  object-fit: contain !important;
+}
+
+
+/* ========================================================= */
+/* PRODUCT PAGE FOOTER */
+/* ========================================================= */
+
+.product-page-footer .elio-brand-logo {
+  width: 190px;
+
+  height: auto;
+
+  object-fit: contain !important;
+
+  filter:
+    brightness(0)
+    invert(1) !important;
+}
+
+
+/* ========================================================= */
+/* COLLECTION HEADER */
+/* ========================================================= */
+
+.collection-page-logo .elio-brand-logo {
+  width: 165px;
+
+  height: 76px;
+
+  object-fit: contain !important;
+}
+
+
+/* ========================================================= */
+/* COLLECTION FOOTER */
+/* ========================================================= */
+
+.collection-footer-brand .elio-brand-logo {
+  width: 190px;
+
+  height: auto;
+
+  object-fit: contain !important;
+
+  filter:
+    brightness(0)
+    invert(1) !important;
+}
+
+
+/* ========================================================= */
+/* ADMIN HEADER */
+/* ========================================================= */
+
+.admin-brand .elio-brand-logo {
+  width: 105px;
+
+  height: 55px;
+
+  object-fit: contain !important;
+
+  filter: none !important;
+}
+
+
+/* ========================================================= */
+/* ADMIN LOGIN */
+/* ========================================================= */
+
+.admin-login-logo .elio-brand-logo {
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain !important;
+
+  filter: none !important;
+}
+
+
+/* ========================================================= */
+/* MOBILE */
+/* ========================================================= */
+
+@media (
+  max-width: 900px
+) {
+
+  .product-header-logo
+  .elio-brand-logo,
+  .collection-page-logo
+  .elio-brand-logo {
+    width: 120px;
+
+    height: 60px;
+  }
+
+}
+
+
+@media (
+  max-width: 520px
+) {
+
+  .logo
+  .elio-brand-logo,
+  .product-header-logo
+  .elio-brand-logo,
+  .collection-page-logo
+  .elio-brand-logo {
+    width: 110px;
+
+    height: 55px;
+  }
+
+
+  .product-page-footer
+  .elio-brand-logo,
+  .collection-footer-brand
+  .elio-brand-logo,
+  .footer-brand
+  .elio-brand-logo {
+    width: 165px;
+  }
+
+}

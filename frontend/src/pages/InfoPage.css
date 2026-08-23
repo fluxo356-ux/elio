@@ -1,0 +1,1182 @@
+/* ========================================================= */
+/* ELIO INFORMATION PAGES */
+/* ========================================================= */
+
+
+.info-page {
+  min-height: 100vh;
+
+  background: #f7f3f0;
+
+  color: #161113;
+}
+
+
+/* ========================================================= */
+/* HEADER */
+/* ========================================================= */
+
+
+.info-header {
+  min-height: 98px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  padding:
+    0
+    4vw;
+
+  background: white;
+
+  border-bottom:
+    1px solid
+    #e2dad6;
+}
+
+
+.info-header-left,
+.info-header-right {
+  display: flex;
+
+  align-items: center;
+
+  gap:
+    clamp(
+      18px,
+      2vw,
+      32px
+    );
+}
+
+
+.info-header-left {
+  justify-self: start;
+}
+
+
+.info-header-right {
+  justify-self: end;
+}
+
+
+.info-header a {
+  font-size: 9px;
+
+  font-weight: 500;
+
+  letter-spacing: 1.7px;
+
+  text-transform: uppercase;
+}
+
+
+.info-logo {
+  display: flex;
+
+  justify-content: center;
+}
+
+
+.info-logo img {
+  width: 140px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ========================================================= */
+/* HERO */
+/* ========================================================= */
+
+
+.info-hero {
+  padding:
+    105px
+    max(
+      7vw,
+      30px
+    )
+    100px;
+
+  background: #f7f3f0;
+
+  border-bottom:
+    1px solid
+    #ded4cf;
+}
+
+
+.info-hero > * {
+  max-width: 1150px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+
+.info-kicker {
+  margin-bottom: 22px;
+
+  color: #97001d;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.info-hero h1 {
+  max-width: 1100px;
+
+  margin-top: 0;
+
+  margin-bottom: 30px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      62px,
+      7vw,
+      110px
+    );
+
+  font-weight: 500;
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+}
+
+
+.info-hero > p:last-child {
+  max-width: 650px;
+
+  margin-left:
+    max(
+      calc(
+        (100% - 1150px) / 2
+      ),
+      0px
+    );
+
+  margin-right: 0;
+
+  color: #756d70;
+
+  font-size: 12px;
+
+  line-height: 1.9;
+}
+
+
+/* ========================================================= */
+/* CONTENT */
+/* ========================================================= */
+
+
+.info-content {
+  width:
+    min(
+      1150px,
+      calc(
+        100% - 48px
+      )
+    );
+
+  margin: auto;
+
+  padding:
+    100px
+    0
+    120px;
+}
+
+
+.info-narrow {
+  max-width: 930px;
+}
+
+
+.info-section-label {
+  margin:
+    0
+    0
+    18px;
+
+  color: #97001d;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+/* ========================================================= */
+/* CONTACT */
+/* ========================================================= */
+
+
+.contact-intro {
+  max-width: 700px;
+
+  margin-bottom: 65px;
+}
+
+
+.contact-intro h2 {
+  margin:
+    0
+    0
+    28px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      50px,
+      5vw,
+      76px
+    );
+
+  font-weight: 500;
+
+  line-height: 0.95;
+
+  letter-spacing: -2px;
+}
+
+
+.contact-intro > p:last-child {
+  max-width: 570px;
+
+  color: #756d70;
+
+  font-size: 12px;
+
+  line-height: 1.9;
+}
+
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap: 16px;
+}
+
+
+.contact-card {
+  min-height: 310px;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  padding: 38px;
+
+  background: white;
+
+  border:
+    1px solid
+    #ded4cf;
+
+  transition:
+    transform
+    0.25s ease,
+    border-color
+    0.25s ease;
+}
+
+
+.contact-card:hover {
+  transform:
+    translateY(
+      -3px
+    );
+
+  border-color: #97001d;
+}
+
+
+.contact-card > span {
+  position: absolute;
+
+  top: 34px;
+
+  right: 35px;
+
+  color: #b9ada9;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size: 28px;
+}
+
+
+.contact-card small {
+  margin-bottom: 30px;
+
+  color: #97001d;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+}
+
+
+.contact-card strong {
+  max-width: 90%;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      27px,
+      2.5vw,
+      39px
+    );
+
+  font-weight: 500;
+
+  overflow-wrap: anywhere;
+}
+
+
+.contact-card p {
+  max-width: 360px;
+
+  margin:
+    19px
+    0
+    25px;
+
+  color: #756d70;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+
+.contact-card b {
+  margin-top: auto;
+
+  color: #97001d;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.6px;
+
+  text-transform: uppercase;
+}
+
+
+/* ========================================================= */
+/* DELIVERY HIGHLIGHT */
+/* ========================================================= */
+
+
+.info-highlight {
+  margin-top: 80px;
+
+  display: grid;
+
+  grid-template-columns:
+    0.85fr
+    1.65fr;
+
+  gap: 50px;
+
+  padding:
+    60px;
+
+  background: #97001d;
+
+  color: white;
+}
+
+
+.info-highlight
+.info-section-label {
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.7
+    );
+}
+
+
+.info-highlight h3 {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size: 48px;
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+.info-highlight-values {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      1fr
+    );
+
+  align-items: center;
+}
+
+
+.info-highlight-values div {
+  min-height: 90px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-left: 28px;
+
+  border-left:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.25
+    );
+}
+
+
+.info-highlight-values span {
+  margin-bottom: 10px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.65
+    );
+
+  font-size: 8px;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.info-highlight-values strong {
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size: 28px;
+
+  font-weight: 500;
+}
+
+
+/* ========================================================= */
+/* FAQ */
+/* ========================================================= */
+
+
+.faq-list {
+  border-top:
+    1px solid
+    #cfc4bf;
+}
+
+
+.faq-list details {
+  border-bottom:
+    1px solid
+    #cfc4bf;
+}
+
+
+.faq-list summary {
+  position: relative;
+
+  padding:
+    31px
+    45px
+    31px
+    0;
+
+  cursor: pointer;
+
+  list-style: none;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      25px,
+      3vw,
+      34px
+    );
+
+  font-weight: 500;
+}
+
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+
+.faq-list summary::after {
+  content: "+";
+
+  position: absolute;
+
+  right: 5px;
+
+  top: 50%;
+
+  transform:
+    translateY(
+      -50%
+    );
+
+  color: #97001d;
+
+  font-family:
+    "Montserrat",
+    sans-serif;
+
+  font-size: 18px;
+}
+
+
+.faq-list
+details[open]
+summary::after {
+  content: "−";
+}
+
+
+.faq-list details p {
+  max-width: 680px;
+
+  margin:
+    -5px
+    0
+    30px;
+
+  color: #756d70;
+
+  font-size: 11px;
+
+  line-height: 1.9;
+}
+
+
+.faq-list details a {
+  display: inline-block;
+
+  margin:
+    -5px
+    0
+    30px;
+
+  color: #97001d;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.4px;
+
+  text-transform: uppercase;
+}
+
+
+.faq-contact {
+  margin-top: 90px;
+
+  padding:
+    70px;
+
+  text-align: center;
+
+  background: #161113;
+
+  color: white;
+}
+
+
+.faq-contact p {
+  margin:
+    0
+    0
+    9px;
+
+  color: #b9adaf;
+
+  font-size: 9px;
+
+  letter-spacing: 1.6px;
+
+  text-transform: uppercase;
+}
+
+
+.faq-contact h2 {
+  margin:
+    0
+    0
+    30px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size: 60px;
+
+  font-weight: 500;
+}
+
+
+.faq-contact a {
+  display: inline-flex;
+
+  min-height: 48px;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding:
+    0
+    25px;
+
+  background: #97001d;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* ========================================================= */
+/* LEGAL PAGES */
+/* ========================================================= */
+
+
+.info-legal {
+  max-width: 980px;
+}
+
+
+.legal-updated {
+  margin-bottom: 50px;
+
+  color: #8d8184;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+
+.info-legal > section {
+  display: grid;
+
+  grid-template-columns:
+    80px
+    1fr;
+
+  gap: 30px;
+
+  padding:
+    45px
+    0;
+
+  border-bottom:
+    1px solid
+    #d3c8c3;
+}
+
+
+.info-legal > section:first-of-type {
+  border-top:
+    1px solid
+    #d3c8c3;
+}
+
+
+.legal-number {
+  color: #97001d;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size: 29px;
+}
+
+
+.info-legal h2 {
+  margin:
+    0
+    0
+    20px;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size:
+    clamp(
+      31px,
+      4vw,
+      44px
+    );
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+.info-legal section p {
+  max-width: 710px;
+
+  margin:
+    0
+    0
+    16px;
+
+  color: #655c5f;
+
+  font-size: 11px;
+
+  line-height: 1.95;
+}
+
+
+.info-legal section p:last-child {
+  margin-bottom: 0;
+}
+
+
+.info-legal section a {
+  display: inline-block;
+
+  margin-top: 8px;
+
+  color: #97001d;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.4px;
+
+  text-transform: uppercase;
+}
+
+
+.legal-placeholder {
+  max-width: 700px;
+
+  margin:
+    24px
+    0;
+
+  padding:
+    20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  border:
+    1px solid
+    #b98f97;
+
+  background: #fff9f8;
+}
+
+
+.legal-placeholder strong {
+  color: #97001d;
+
+  font-size: 8px;
+
+  letter-spacing: 1.7px;
+
+  text-transform: uppercase;
+}
+
+
+.legal-placeholder span {
+  color: #756d70;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+}
+
+
+.legal-note {
+  margin-top: 55px;
+
+  padding: 28px;
+
+  border-left:
+    3px solid
+    #97001d;
+
+  background: white;
+
+  color: #62595c;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+
+/* ========================================================= */
+/* FOOTER EXTRA */
+/* ========================================================= */
+
+
+.info-footer-text {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.72
+    );
+
+  font-size: 11px;
+
+  line-height: 1.55;
+}
+
+
+.footer-newsletter-message-success {
+  color:
+    #93c6a5 !important;
+}
+
+
+.footer-newsletter-message-error {
+  color:
+    #e1a0aa !important;
+}
+
+
+/* ========================================================= */
+/* TABLET */
+/* ========================================================= */
+
+
+@media (
+  max-width: 900px
+) {
+
+  .info-header {
+    min-height: 82px;
+
+    padding:
+      0
+      20px;
+  }
+
+
+  .info-header-left,
+  .info-header-right {
+    display: none;
+  }
+
+
+  .info-logo {
+    grid-column: 2;
+  }
+
+
+  .info-logo img {
+    width: 115px;
+  }
+
+
+  .info-hero {
+    padding:
+      75px
+      24px
+      70px;
+  }
+
+
+  .info-hero h1 {
+    font-size:
+      clamp(
+        54px,
+        11vw,
+        78px
+      );
+  }
+
+
+  .info-content {
+    width:
+      calc(
+        100% - 40px
+      );
+
+    padding:
+      70px
+      0
+      90px;
+  }
+
+
+  .contact-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .contact-card {
+    min-height: 270px;
+  }
+
+
+  .info-highlight {
+    grid-template-columns:
+      1fr;
+
+    padding: 45px;
+  }
+
+
+  .info-highlight-values {
+    border-top:
+      1px solid
+      rgba(
+        255,
+        255,
+        255,
+        0.25
+      );
+  }
+
+
+  .info-highlight-values div:first-child {
+    border-left: none;
+
+    padding-left: 0;
+  }
+
+}
+
+
+/* ========================================================= */
+/* MOBILE */
+/* ========================================================= */
+
+
+@media (
+  max-width: 600px
+) {
+
+  .info-hero {
+    padding:
+      65px
+      20px;
+  }
+
+
+  .info-hero h1 {
+    margin-bottom: 22px;
+
+    font-size:
+      clamp(
+        48px,
+        14vw,
+        64px
+      );
+
+    letter-spacing: -2px;
+  }
+
+
+  .info-content {
+    width:
+      calc(
+        100% - 32px
+      );
+
+    padding:
+      60px
+      0
+      75px;
+  }
+
+
+  .contact-card {
+    min-height: 250px;
+
+    padding: 28px;
+  }
+
+
+  .info-highlight {
+    margin-top: 55px;
+
+    padding: 32px 25px;
+  }
+
+
+  .info-highlight h3 {
+    font-size: 40px;
+  }
+
+
+  .info-highlight-values {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .info-highlight-values div {
+    min-height: 75px;
+
+    padding:
+      0 !important;
+
+    border-left: 0;
+
+    border-bottom:
+      1px solid
+      rgba(
+        255,
+        255,
+        255,
+        0.2
+      );
+  }
+
+
+  .info-highlight-values div:last-child {
+    border-bottom: 0;
+  }
+
+
+  .faq-list summary {
+    padding:
+      27px
+      35px
+      27px
+      0;
+
+    font-size: 25px;
+  }
+
+
+  .faq-contact {
+    margin-top: 60px;
+
+    padding:
+      45px
+      20px;
+  }
+
+
+  .faq-contact h2 {
+    font-size: 48px;
+  }
+
+
+  .info-legal > section {
+    grid-template-columns:
+      1fr;
+
+    gap: 15px;
+
+    padding:
+      35px
+      0;
+  }
+
+
+  .legal-number {
+    font-size: 23px;
+  }
+
+}
